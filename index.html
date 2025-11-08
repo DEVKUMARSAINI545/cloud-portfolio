@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Kumar Saini - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/3a7a5a6d4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+  <body class="bg-neutral-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-950 backdrop-blur-sm z-50">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div class="text-3xl font-bold text-blue-500">Dev_Saini__</div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-blue-500">Home</a>
+            <a href="#services" class="hover:text-blue-500">Services</a>
+            <a href="#work" class="hover:text-blue-500">Work</a>
+            <a href="#skills" class="hover:text-blue-500">Skills</a>
+            <a href="#contact" class="hover:text-blue-500">Contact</a>
+          </div>
+          <a href="https://wa.me/919352742397?text=Hello%20Dev%2C%20I%20want%20to%20hire%20you" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full items-center">
+            <i class="fab fa-whatsapp mr-2"></i>
+            <span>Hire Me</span>
+          </a>
+          <button class="md:hidden mobile-menu-button">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden mobile-menu hidden">
+        <div class="flex flex-col space-y-4 p-4 bg-gray-800">
+          <a href="#home" class="hover:text-blue-500">Home</a>
+          <a href="#services" class="hover:text-blue-500">Services</a>
+          <a href="#work" class="hover:text-blue-500">Work</a>
+          <a href="#skills" class="hover:text-blue-500">Skills</a>
+          <a href="#contact" class="hover:text-blue-500">Contact</a>
+          <a href="https://wa.me/919352742397?text=Hello%20Dev%2C%20I%20want%20to%20hire%20you" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-left inline-flex items-center">
+            <i class="fab fa-whatsapp mr-2"></i>
+            <span>Hire Me</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="animate-fadeIn">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+              I am <span class="text-blue-500">Dev Kumar Saini</span>
+            </h1>
+            <h2 class="text-3xl md:text-5xl text-blue-500 mb-6">
+              AWS Cloud & DevOps Engineer
+            </h2>
+            <p class="text-gray-400 mb-8">
+            Passionate AWS Cloud & DevOps Engineer and Web Developer with a strong focus on building scalable cloud infrastructures and seamless digital experiences. Dedicated to transforming ideas into reliable, automated systems and crafting elegant, high-performance web solutions that drive innovation and efficiency.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="images/Dev_Kumar_Saini_Cloud_Engineer_Resume.pdf"
+                download="Dev_Kumar_Saini_CV"
+                class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full hover-scale cursor-pointer inline-flex items-center"
+              >
+                <span>Download CV</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  ></path>
+                </svg>
+              </a>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="text-blue-500 hover:text-blue-400 text-2xl hover-scale"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-500 hover:text-blue-400 text-2xl hover-scale"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-blue-500 hover:text-blue-400 text-2xl hover-scale"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="relative animate-fadeIn">
+            <div
+              class="w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/20 flex items-center justify-center"
+            >
+              <img
+                src="images/dev2.jpg"
+                alt="Shiv Kumar Saini"
+                class="w-80 h-80 transition-transform duration-500 hover:scale-110 hover:translate-y-2 object-cover rounded-full border-4 border-blue-500 shadow-lg"
+                style="object-position: center"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800/50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          My <span class="text-blue-500">Services</span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 p-8 rounded-xl hover-scale">
+            <div class="text-blue-500 text-4xl mb-4">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">AWS Cloud Services</h3>
+            <p class="text-gray-400 mb-4">
+              Expert implementation of AWS services including EC2, S3, Lambda,
+              ECS, RDS, and more. Building scalable, secure, and cost-effective
+              cloud infrastructure.
+            </p>
+            <div class="grid grid-cols-2 gap-2 mt-4">
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >IAM</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >VPC</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >EC2</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >S3</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >RDS</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >DynamoDB</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >SNS</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >Lambda</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >CloudWatch</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >CloudFront</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >ECS</span
+              >
+              <span
+                class="bg-blue-500/20 text-blue-400 text-xs px-3 py-2 rounded-full text-center"
+                >EKS</span
+              >
+            </div>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-xl hover-scale">
+            <div class="text-blue-500 text-4xl mb-4">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">DevOps Solutions</h3>
+            <p class="text-gray-400">
+              Building automated CI/CD pipelines, containerizing applications with Docker, managing scalable deployments using Kubernetes, and designing cloud infrastructure through Terraform and AWS CloudFormation to ensure reliability and efficiency.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-xl hover-scale">
+            <div class="text-blue-500 text-4xl mb-4">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+            <p class="text-gray-400">
+          Creating responsive and modern web applications using the latest technologies, including HTML5, CSS3, JavaScript, and popular frameworks. Completed a 6-month Full-Stack Development program, gaining hands-on experience in building dynamic, user-focused, and scalable web solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          My <span class="text-blue-500">Skills</span>
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">AWS EC2/VPC</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 95%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">IAM/Security</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">RDS/DynamoDB</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">S3/Storage</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Lambda/SNS</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Lightsail</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Docker</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Kubernetes</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Jenkins CI/CD</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Terraform</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">CloudWatch</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">CSS3</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 85%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">JavaScript</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Tailwind CSS</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">React.js</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">Git/GitHub</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">EKS/ECS</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">RESTfulAPIs</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+            <h3 class="text-xl font-semibold mb-4">MongoDB</h3>
+            <div class="w-full bg-gray-700 rounded-full h-2">
+              <div
+                class="bg-blue-500 h-2 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl  md:text-4xl font-bold text-center mb-12">
+            My <span class="text-blue-500">Projects</span>
+        </h2>
+        <div class="grid md:grid-cols-2   lg:grid-cols-2 gap-2   ">
+          <div  class="project1 bg-gray-800  md:mx-[18%]   bg-black p-6 cursor-pointer my-5 lg:my-0 xl:w-[60%] xl:h-[100%]   rounded-xl w-[100%] md:w-[65%] overflow-hidden hover-scale">
+            <div
+              class="h-30 overflow-hidden  flex items-center justify-center  "
+            >
+            <img
+                src="images/onsko-logo.webp"
+                alt="AWS Infrastructure"
+                class="w-full rounded-lg h-full object-contain"
+              /> 
+            </div>
+            <div class="p-5">
+  <h3 class="text-xl font-bold mb-1">
+    End-to-End Production-Grade CI/CD Pipeline on AWS EKS
+  </h3>
+  <p class="text-gray-400 mb-4 line-clamp-5 leading-loose">
+    ● Built and automated a complete <b>CI/CD pipeline</b> using <b>Jenkins</b> and <b>GitOps</b> for continuous integration and deployment on <b>AWS EKS</b>.
+    <br />
+    ● Implemented <b>Infrastructure as Code (IaC)</b> using <b>Terraform</b> to provision <b>EC2, IAM, and Security Groups</b> ensuring secure and repeatable environments.
+    <br />
+    ● Containerized microservices using <b>Docker</b>, stored images on <b>Docker Hub</b>, and orchestrated deployments through <b>Kubernetes</b> on EKS.
+    <br />
+    ● Integrated <b>Grafana</b> and <b>Prometheus</b> for real-time monitoring, alerting, and performance visualization of application metrics.
+    <br />
+    ● Configured <b>email notifications</b> for build status and pipeline events, ensuring transparency and quick response to deployment issues.
+  </p>
+
+  <!-- <div class="space-x-2">
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">AWS</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">EKS</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Docker</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Jenkins</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Terraform</span>
+    <br />
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Prometheus</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Grafana</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">GitOps</span>
+  </div> -->
+</div>
+
+          </div>
+          <div  class="project2 bg-gray-800  md:mx-[18%]   bg-black p-6 cursor-pointer my-5 lg:my-0 xl:w-[60%] xl:h-[100%]   rounded-xl w-[100%] md:w-[65%] overflow-hidden hover-scale">
+            <div
+              class="h-30 overflow-hidden  flex items-center justify-center  "
+            >
+            <img
+                src="images/awscloud.png"
+                alt="AWS Infrastructure"
+                class="w-full rounded-lg h-full object-contain"
+              /> 
+            </div>
+            <div class="p-5">
+   <h3 class="text-xl font-bold mb-1">
+    AWS Cloud Cost Optimization & Monitoring Dashboard
+  </h3>
+  <p class="text-gray-400 mb-4 line-clamp-5 leading-loose">
+    ● Designed and implemented an <b>automated cost monitoring dashboard</b> on <b>AWS</b> to analyze, visualize, and optimize cloud spending.  
+    <br />
+    ● Integrated <b>AWS Lambda</b>, <b>Cost Explorer API</b>, <b>S3</b>, and <b>EventBridge</b> for seamless data collection, storage, and automated report generation.  
+    <br />
+    ● Configured <b>SNS-based email alerts</b> to notify administrators when AWS costs exceeded predefined thresholds, ensuring proactive cost control.  
+    <br />
+    ● Visualized spending trends using <b>AWS QuickSight</b> dashboards, enabling real-time insights into service-level usage and budget forecasting.  
+    <br />
+    ● Implemented <b>versioning and lifecycle policies</b> on S3 for data retention and automated cleanup, enhancing storage efficiency and compliance.  
+  </p>
+  <!-- <div class="space-x-2">
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">AWS</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">EKS</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Docker</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Jenkins</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Terraform</span>
+    <br />
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Prometheus</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">Grafana</span>
+    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">GitOps</span>
+  </div> -->
+</div>
+
+          </div>
+         
+          
+          <!-- <div class="bg-gray-800 rounded-xl overflow-hidden hover-scale">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://via.placeholder.com/600x300.png?text=Web+Application"
+                alt="Web Application"
+                class="w-full h-full object-cover"
+              />
+            </div>
+             <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Responsive Web Application</h3>
+              <p class="text-gray-400 mb-4">
+                Developed a modern, responsive web application with a focus on
+                user experience and performance optimization.
+              </p>
+              <div class="flex space-x-2">
+                <span
+                  class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full"
+                  >HTML5</span
+                >
+                >
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="bg-gray-800 rounded-xl overflow-hidden hover-scale">
+            <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x300.png?text=AWS+Cloud+Architecture" alt="AWS Cloud Architecture" class="w-full h-full object-cover">
+                    </div> -->
+            <!-- <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Enterprise AWS Cloud Architecture</h3>
+                        <p class="text-gray-400 mb-4">Designed and implemented a secure, scalable multi-tier architecture with VPC, IAM security controls, RDS databases, and DynamoDB for high availability.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">VPC</span>
+                            <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">IAM</span>
+                            <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">RDS</span>
+                            <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">DynamoDB</span>
+                            <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1 rounded-full">SNS</span>
+                        </div>
+                    </div> -->
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+  <section id="contact" class="py-20   text-white">
+  <div class="container mx-auto px-6 md:px-12 text-center">
+    <h2 class="text-4xl font-bold mb-6">
+      Contact <span class="text-blue-500">Details</span>
+    </h2>
+    <p class="text-gray-400 mb-12 text-lg">
+      Let’s connect! You can reach me through the details below.
+    </p>
+
+    <div class="max-w-2xl mx-auto bg-gray-900/60 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-gray-700 space-y-6">
+      <div class="flex items-center justify-center space-x-3">
+        <i class="fa-solid fa-user text-blue-400 text-xl"></i>
+        <span class="text-lg font-medium">Dev Kumar Saini</span>
+      </div>
+
+      <div class="flex items-center justify-center space-x-3">
+        <i class="fa-solid fa-envelope text-blue-400 text-xl"></i>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=devsaini27806@gmail.com" target="_blank" class="text-lg text-gray-300 hover:text-blue-400 transition">
+          devsaini27806@gmail.com
+        </a>
+      </div>
+
+      <div class="flex items-center justify-center space-x-3">
+        <i class="fa-solid fa-phone text-blue-400 text-xl"></i>
+      <a href="https://wa.me/919352742397?text=Hello%20Dev%2C%20I%20want%20to%20hire%20you" target="_blank">  <span class="text-lg text-gray-300">+91 93527 42397</span></a>
+      </div>
+  
+      <div class="flex items-center justify-center space-x-3">
+        <i class="fa-solid fa-location-dot text-blue-400 text-xl"></i>
+        <span class="text-lg text-gray-300">Jaipur, Rajasthan, India</span>
+      </div>
+
+      <div class="flex items-center justify-center space-x-3">
+        <i class="fa-brands fa-linkedin text-blue-400 text-xl"></i>
+        <a href="https://www.linkedin.com/in/dev-saini-4432002b5/" target="_blank" class="text-lg text-gray-300 hover:text-blue-400 transition">
+          linkedin.com/in/dev-saini-4432002b5/
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="py-6 bg-neutral-950">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-400">
+          © 2025 Dev Kumar Saini. All rights reserved. <br>
+         <a class="text-blue-500" href="https://github.com/DEVKUMARSAINI545" target="_blank">Github </a>  |  <a class="text-blue-500" href="https://www.linkedin.com/in/dev-saini-4432002b5" target="_blank">LinkedIn </a> 
+          
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
+<script>
+  // Disable right-click
+  document.addEventListener("contextmenu", e => e.preventDefault());
+
+  // Disable common inspect shortcuts
+  document.addEventListener("keydown", e => {
+    if (
+      e.ctrlKey && (e.key === "u" || e.key === "U" || e.key === "s" || e.key === "S") || // Ctrl+U / Ctrl+S
+      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i" || e.key === "C" || e.key === "c" || e.key === "J" || e.key === "j")) || // Ctrl+Shift+I/C/J
+      e.key === "F12"
+    ) {
+      e.preventDefault();
+    }
+  });
+</script>
